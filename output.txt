@@ -1,0 +1,36 @@
+                                          Date & Time  ...   Unnamed: 4
+0                              Reported Incident Type  ...  Disposition
+1                                                 NaN  ...          NaN
+2                             4/3/19 TRESPASS WARNING  ...          NaN
+3                                             9:41 AM  ...       CLOSED
+4                                                 NaN  ...          NaN
+5   Officer while on patrol was approached on a re...  ...          NaN
+6   the individual and conducted a field interview...  ...          NaN
+7   individual was then issued a verbal trespass w...  ...          NaN
+8                                                 NaN  ...          NaN
+9                                 4/3/19 THEFT REPORT  ...          NaN
+10                                           11:04 AM  ...       CLOSED
+11                                                NaN  ...          NaN
+12  Officer dispatched to take a report of an atte...  ...          NaN
+13                                                NaN  ...          NaN
+14                               4/3/19 DEMONSTRATION  ...          NaN
+15                                           12:27 PM  ...       CLOSED
+16                                                NaN  ...          NaN
+17  Officer dispatched to monitor a demonstration ...  ...          NaN
+18                                                NaN  ...          NaN
+19                         4/3/19 SUSPICIOUS ACTIVITY  ...          NaN
+20                                           12:56 PM  ...       CLOSED
+21                                                NaN  ...          NaN
+22  Officer dispatched to take a report of an indi...  ...          NaN
+23                      emergency landline telephone.  ...          NaN
+24                                                NaN  ...          NaN
+25                                   4/3/19 VANDALISM  ...          NaN
+26                                            2:10 PM  ...       CLOSED
+27                                                NaN  ...          NaN
+28  Officer dispatched to take a report of tagging...  ...          NaN
+29                                                NaN  ...          NaN
+30                            4/3/19 TRESPASS WARNING  ...          NaN
+31                                            3:09 PM  ...       CLOSED
+32                                                NaN  ...          NaN
+
+[33 rows x 5 columns]
