@@ -20,3 +20,6 @@
 from tabula import convert_into
 
 convert_into("test.pdf", "output.csv", output_format="csv")
+
+# There is an option to set the value of x for columns but I'm opting not to use it, feels like more trouble than it's worth
+

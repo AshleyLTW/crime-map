@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eb31de5-13f5-4e71-b6e1-487b8e533e61" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tutorial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="345">
+              <caret line="23" column="124" selection-start-line="23" selection-start-column="124" selection-end-line="23" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -87,6 +89,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -117,12 +120,12 @@
       <updated>1553879694498</updated>
       <workItem from="1553879697566" duration="629000" />
       <workItem from="1554332758597" duration="164000" />
-      <workItem from="1554480622455" duration="1820000" />
+      <workItem from="1554480622455" duration="2125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2613000" />
+    <option name="totallyTimeSpent" value="2918000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="646" y="0" width="634" height="800" extended-state="0" />
@@ -164,8 +167,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="345">
+          <caret line="23" column="124" selection-start-line="23" selection-start-column="124" selection-end-line="23" selection-end-column="124" />
         </state>
       </provider>
     </entry>
