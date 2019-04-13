@@ -15,7 +15,7 @@ crimes_ref = db.collection(u"crime-logs")
 
 # geolocater = Nominatim(user_agent = "harvardopendataproject")
 
-# Extract and clean data
+# Extract, clean, and insert data into db
 tables = camelot.read_pdf("test.pdf", pages = "1-end")
 row_num = 0
 
@@ -35,3 +35,9 @@ for table in tables:
             db.collection(u'crime-logs').add(report)
             row_num += 1
 
+# Query db to get most recent date
+query = crimes_ref.order_by(
+    u'reported', direction=firestore.Query.DESCENDING).limit(1)
+results = query.stream()
+for doc in results:
+    print(doc.to_dict())
