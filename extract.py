@@ -30,9 +30,10 @@ def scrape(url):
             if row_num % 2 == 0:
                 clean_row = [x for x in row if len(x) > 0]
                 # Account for the case where description is broken up across two pages
-                if re.search(r'%d/%d/%d%d', clean_row[0]):
+                if re.search(r'\d/\d/\d\d', clean_row[0]):
                     # Account for case where all info is read into one element in a list
                     if len(clean_row) == 1:
+                        # print("unexpected")
                         data = clean_row[0].splitlines()
                         reported = data[0] +"\n" + data[5]
                         occurred = data[1] + "\n" + data[6]
@@ -44,14 +45,17 @@ def scrape(url):
                                   "address": address, "status": status}
                     # Regular case (each cell read in as separate element)
                     else:
+                        # print("regular")
                         clean_row[3] = clean_row[3].replace("\n", " ")
                         date_time_obj = datetime.datetime.strptime(clean_row[0], '%m/%d/%y\n%I:%M %p')
                         report = {"reported": date_time_obj, "type": clean_row[1], "occurred": clean_row[2],
                                   "address": clean_row[3], "status": clean_row[4]}
                     row_num += 1
                 else:
+                    # print("anomaly")
                     pass
             else:
+                print("description")
                 clean_row = [x for x in row if len(x) > 0]
                 report["description"] = clean_row[0]
                 # db.collection(u'crime-logs').add(report)
