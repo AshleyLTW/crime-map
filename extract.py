@@ -24,14 +24,19 @@ def scrape(url):
             if row_num % 2 == 0:
                 clean_row = [x for x in row if len(x) > 0]
                 # Account for the case where description is broken up across two pages
-                if re.search(r'\d+/\d+/\d+', clean_row[0]):
+                if re.search(r'\d+/\d+/\d+', clean_row[0]) and not re.search(r'U|update', clean_row[0]):
                     # Account for case where all info is read into one element in a list
                     if len(clean_row) == 1:
+                        print(clean_row)
                         data = clean_row[0].splitlines()
                         # Account for when 12am is sometimes written as 0:xx am
                         reported = (data[0] +"\n" + data[5]).replace("\n0:", "\n12:")
                         occurred = data[1] + "\n" + data[6]
-                        address = data[2] + " " + data[7]
+                        # Account for when address is one line only
+                        if len(data) == 7:
+                            address = data[2] + " " + data[7]
+                        else:
+                            address = data[2].replace("\n", "")
                         d_type = data[3]
                         status = data[4]
                         date_time_obj = datetime.datetime.strptime(reported, '%m/%d/%y\n%I:%M %p')
@@ -77,4 +82,4 @@ for doc in results:
         scrape(url)
         last_date += timedelta(days = 1)
 
-# scrape("https://www.hupd.harvard.edu/files/hupd/files/031119.pdf")
+# scrape("https://www.hupd.harvard.edu/files/hupd/files/040219.pdf")
