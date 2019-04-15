@@ -20,12 +20,11 @@ def scrape(url):
 
     for table in tables:
         for row in table.data[1:]:
-            print(row)
             # Check whether it's info or description
             if row_num % 2 == 0:
                 clean_row = [x for x in row if len(x) > 0]
                 # Account for the case where description is broken up across two pages
-                if re.search(r'\d/\d/\d\d', clean_row[0]):
+                if re.search(r'\d+/\d+/\d+', clean_row[0]):
                     # Account for case where all info is read into one element in a list
                     if len(clean_row) == 1:
                         data = clean_row[0].splitlines()
@@ -58,8 +57,8 @@ def scrape(url):
 
 # Find latest date
 query = crimes_ref.order_by (u'reported', direction=firestore.Query.DESCENDING).limit(1)
-
 results = query.stream()
+
 for doc in results:
     latest_time = (doc.to_dict ())["reported"]
     last_date = datetime.datetime(year=latest_time.year, month=latest_time.month, day=latest_time.day)
@@ -77,3 +76,5 @@ for doc in results:
         # Scrape each url
         scrape(url)
         last_date += timedelta(days = 1)
+
+# scrape("https://www.hupd.harvard.edu/files/hupd/files/031119.pdf")
