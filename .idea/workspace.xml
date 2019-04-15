@@ -15,11 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/extract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="57" selection-start-line="57" selection-end-line="77" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -165,12 +162,12 @@
       <workItem from="1555164779617" duration="6132000" />
       <workItem from="1555172861566" duration="9483000" />
       <workItem from="1555291161010" duration="27000" />
-      <workItem from="1555291248465" duration="2235000" />
+      <workItem from="1555291248465" duration="2605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29516000" />
+    <option name="totallyTimeSpent" value="29886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1658" y="80" width="1280" height="777" extended-state="0" />
@@ -190,7 +187,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.42335767" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4218978" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32846716" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -260,11 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/extract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="57" selection-start-line="57" selection-end-line="77" selection-end-column="40" />
         </state>
       </provider>
     </entry>
