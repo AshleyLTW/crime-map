@@ -20,6 +20,7 @@ def scrape(url):
 
     for table in tables:
         for row in table.data[1:]:
+            print(row)
             # Check whether it's info or description
             if row_num % 2 == 0:
                 clean_row = [x for x in row if len(x) > 0]
@@ -51,20 +52,20 @@ def scrape(url):
             else:
                 clean_row = [x for x in row if len(x) > 0]
                 report["description"] = clean_row[0]
-                # db.collection(u'crime-logs').add(report)
+                db.collection(u'crime-logs').add(report)
                 print(report)
                 row_num += 1
 
 # Find latest date
-query = crimes_ref.order_by(
-    u'reported', direction=firestore.Query.DESCENDING).limit(1)
+query = crimes_ref.order_by (u'reported', direction=firestore.Query.DESCENDING).limit(1)
+
 results = query.stream()
 for doc in results:
     latest_time = (doc.to_dict ())["reported"]
     last_date = datetime.datetime(year=latest_time.year, month=latest_time.month, day=latest_time.day)
     last_date += timedelta(days = 1)
     cur_date = datetime.datetime.now()
-    while(last_date < cur_date):
+    while last_date < cur_date:
         day = str(last_date.day)
         month = str(last_date.month)
         year = str(last_date.year - 2000)
@@ -76,5 +77,3 @@ for doc in results:
         # Scrape each url
         scrape(url)
         last_date += timedelta(days = 1)
-
-# scrape("https://www.hupd.harvard.edu/files/hupd/files/040719.pdf")

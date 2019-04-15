@@ -11,3 +11,4 @@ Scraping HUPD crime reports and rendering visually
 
 ### Future todos: 
 - Optimise the way that the pdfs are scraped to account for the weird case
+- Currently returns an error 404 if HUPD is behind in posting logs. Is there a better way to handle this?
